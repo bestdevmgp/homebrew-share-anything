@@ -1,20 +1,20 @@
 class ShareAnything < Formula
   desc "CLI for Share Anything - Fast file sharing from the terminal"
   homepage "https://github.com/bestdevmgp/share-anything-cli"
-  version "0.3.6"
+  version "0.4.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/bestdevmgp/share-anything-cli/releases/download/v#{version}/share-macos-aarch64"
-      sha256 "303c873d2d73350dd6967c864932ad68a911df107d0a39a79d4f157df2008a99"
+      sha256 "1fcd054dcd9e44c4be70e3c47764ec029a9535ef5562b5eaba14574fe26abf73"
 
       def install
         bin.install "share-macos-aarch64" => "share"
       end
     else
       url "https://github.com/bestdevmgp/share-anything-cli/releases/download/v#{version}/share-macos-x86_64"
-      sha256 "a0e4dce9b35f3f198e2502d5d2320f1912fe44bd379d9e7022763d151a546777"
+      sha256 "0e1ad4c3bee8564175ba0db74d7c9098e15a9ca1707e70281599c34db9c5b324"
 
       def install
         bin.install "share-macos-x86_64" => "share"
@@ -25,14 +25,14 @@ class ShareAnything < Formula
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/bestdevmgp/share-anything-cli/releases/download/v#{version}/share-linux-aarch64"
-      sha256 "e3f9284b0eb9360cdcb4e2d973d058c82cb3bba9a33fdb459150fbf48112c1c9"
+      sha256 "9bd81e861ec6928cf38de4af510835bf0465a3497182d7b350e865337361ca74"
 
       def install
         bin.install "share-linux-aarch64" => "share"
       end
     else
       url "https://github.com/bestdevmgp/share-anything-cli/releases/download/v#{version}/share-linux-x86_64"
-      sha256 "ed4282fefad1d180318eafa55eb0a6ba0af328c0f871aa005fc36a40b4e3b3b0"
+      sha256 "8fb7d99ccd89edfbdcd7f4ad5b4ff190b49c15e1ce0bf5c0746771d77e914567"
 
       def install
         bin.install "share-linux-x86_64" => "share"
